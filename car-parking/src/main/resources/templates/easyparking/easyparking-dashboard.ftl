@@ -194,7 +194,6 @@
             <div class="page-header row no-gutters py-4">
               <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
                 <span class="text-uppercase page-subtitle">Dashboard</span>
-                <h3 class="page-title">Blog Overview</h3>
               </div>
             </div>
             <!-- End Page Header -->
@@ -205,8 +204,8 @@
                   <div class="card-body p-0 d-flex">
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
-                        <span class="stats-small__label text-uppercase">Posts</span>
-                        <h6 class="stats-small__value count my-3">2,390</h6>
+                        <span class="stats-small__label text-uppercase">Total Users</span>
+                        <h6 class="stats-small__value count my-3">${dashboardDto.totalUsers}</h6>
                       </div>
                       <div class="stats-small__data">
                         <span class="stats-small__percentage stats-small__percentage--increase">4.7%</span>

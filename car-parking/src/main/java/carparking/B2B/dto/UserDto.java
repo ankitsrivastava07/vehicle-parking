@@ -19,5 +19,7 @@ public class UserDto {
     @NotNull(message = "Please enter valid amount")
     private Double amount;
     @NotNull(message = "Please enter valid package id")
-    private Long packageId;
+    private String packageId;
+    @NotBlank(message = "Please enter user role ")
+    private String userRole;
 }

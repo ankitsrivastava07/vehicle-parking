@@ -1,6 +1,5 @@
 package carparking.B2B.dao.entity;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="reference_code")

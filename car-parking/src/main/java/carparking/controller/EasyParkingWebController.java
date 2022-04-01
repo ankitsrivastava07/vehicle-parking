@@ -15,6 +15,6 @@ public class EasyParkingWebController {
 
     @GetMapping("/sign-in")
     public ModelAndView login(){
-        return new ModelAndView("easyparking/easyparking-login");
+        return new ModelAndView("easyparking/easyparking-sign-in");
     }
 }

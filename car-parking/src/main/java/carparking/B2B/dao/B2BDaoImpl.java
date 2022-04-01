@@ -1,6 +1,7 @@
 package carparking.B2B.dao;
 import carparking.B2B.dao.entity.UserEntity;
 import carparking.B2B.dao.repository.UserRepository;
+import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -15,5 +16,9 @@ public class B2BDaoImpl implements B2BDao{
     @Override
     public UserEntity emailOrMobileAlreadyExist(String element){
       return userRepository.findByEmailOrMobile(element);
+    }
+
+    public UserEntity addAdmin(UserEntity userEntity){
+        return userRepository.save(userEntity);
     }
 }
